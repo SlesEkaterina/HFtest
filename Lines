@@ -1,0 +1,6 @@
+fname = input("Enter file name: ")
+lines = 0
+with open(fname, 'r',encoding="utf-8") as f:
+    for line in f:
+        lines += 1
+print("Found {} lines".format(lines))
