@@ -1,0 +1,8 @@
+fname = input("Enter file name: ")
+letters = 0
+with open(fname, 'r',encoding="utf-8") as f:
+    words = f.read()
+    for letter in words:
+        if letter == 'a' or letter == 'A' or letter == 'а' or letter == 'А' : 
+            letters += 1
+print ("Found {} letters a".format(letters))
